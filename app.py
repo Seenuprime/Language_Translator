@@ -7,9 +7,9 @@ load_dotenv()
 
 st.title("Welcome to the language translator")
 
-os.environ['GROQ_API_KEY'] = "Your Groq API Key"
+GROQ_API_KEY = "Your Groq API Key"
 
-llm = ChatGroq(model='llama-3.3-70b-versatile')
+llm = ChatGroq(model='llama-3.3-70b-versatile', api_key=GROQ_API_KEY)
 
 def prompt(content, language):
     template = """
