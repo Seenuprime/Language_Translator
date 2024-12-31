@@ -9,7 +9,7 @@ st.title("Welcome to the language translator")
 
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
-llm = ChatGroq(model='llama-3.3-70b-versatile', api_key=GROQ_API_KEY)
+llm = ChatGroq(model='llama-3.3-70b-versatile', groq_api_key=GROQ_API_KEY)
 
 def prompt(content, language):
     template = """
