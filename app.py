@@ -1,9 +1,6 @@
 import streamlit as st
 from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
-import os
-from dotenv import load_dotenv
-load_dotenv()
 
 st.title("Welcome to the language translator")
 
