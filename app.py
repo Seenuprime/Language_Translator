@@ -7,7 +7,7 @@ load_dotenv()
 
 st.title("Welcome to the language translator")
 
-os.environ['GROQ_API_KEY'] = os.getenv('GROQ_API_KEY')
+os.environ['GROQ_API_KEY'] = "Your Groq API Key"
 
 llm = ChatGroq(model='llama-3.3-70b-versatile')
 
