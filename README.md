@@ -1,7 +1,12 @@
-# Language_Translator
+# Language Translator (Streamlit + LangChain)
 
-You need to have a ".env" file with the following:
+A simple web app for translating text between languages using an LLM via LangChain and Groq.
 
-GROQ_API_KEY = 'Your Groq API Key'
+## Tech stack
+Python, LangChain, Groq, Streamlit
 
-link: https://groq.com/
+## Run locally
+pip install -r requirements.txt
+streamlit run app.py
+
+Requires a .env file with GROQ_API_KEY set (get one at https://groq.com/).
